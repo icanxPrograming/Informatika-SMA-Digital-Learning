@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatika SMA — Digital Learning Hub & Portal Materi</title>
+  <meta name="description" content="Portal materi pembelajaran Informatika SMA Kelas 10, 11, dan 12 yang modern, terstruktur, responsif, dan mudah dipahami.">
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+  <!-- Sticky Navbar Header -->
+  <header class="sticky top-0 z-40 glass-nav transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Title -->
+      <a href="#index" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="code-2" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 dark:text-white leading-none">
+            Informatika <span class="text-blue-600 dark:text-blue-400">SMA</span>
+          </span>
+          <span class="text-[10px] sm:text-xs font-semibold text-slate-500 dark:text-slate-400">Digital Learning Hub</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#index" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition">Beranda</a>
+        <a href="#kelas-10" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition">Kelas 10</a>
+        <a href="#kelas-11-12" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition">Kelas 11–12</a>
+        <a href="#tentang" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition">Tentang</a>
+      </nav>
+
+      <!-- Right Action Controls (Search, Theme Toggle, Mobile Menu) -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        
+        <!-- Search Quick Trigger Button -->
+        <button 
+          type="button"
+          class="open-search-btn px-3 py-2 sm:px-3.5 sm:py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-medium flex items-center gap-2 transition border border-slate-200/60 dark:border-slate-700/60"
+          aria-label="Cari Materi"
+        >
+          <i data-lucide="search" class="w-4 h-4 text-slate-500"></i>
+          <span class="hidden sm:inline">Cari materi...</span>
+          <kbd class="hidden md:inline-block px-1.5 py-0.5 text-[10px] font-mono bg-white dark:bg-slate-900 rounded text-slate-400 border border-slate-200 dark:border-slate-700">Ctrl+K</kbd>
+        </button>
+
+        <!-- Dark Mode Toggle Button -->
+        <button 
+          id="themeToggleBtn" 
+          type="button" 
+          class="p-2 sm:p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition border border-slate-200/60 dark:border-slate-700/60"
+          aria-label="Ganti Tema Mode"
+        >
+          <i data-lucide="moon" class="theme-icon w-4 h-4 sm:w-5 sm:h-5"></i>
+        </button>
+
+        <!-- Mobile Drawer Toggle Hamburger -->
+        <button 
+          id="mobileMenuBtn" 
+          type="button" 
+          class="md:hidden p-2 sm:p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition"
+          aria-label="Buka Menu"
+        >
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay Menu -->
+  <div id="mobileDrawer" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm hidden flex flex-col justify-end sm:justify-start">
+    <div class="bg-white dark:bg-slate-900 w-full sm:max-w-sm ml-auto h-full p-6 flex flex-col justify-between shadow-2xl overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 mb-6 border-b border-slate-100 dark:border-slate-800">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">
+              <i data-lucide="code-2" class="w-5 h-5"></i>
+            </div>
+            <span class="font-bold text-slate-900 dark:text-white">Informatika SMA</span>
+          </div>
+          <button id="closeMobileMenuBtn" class="p-2 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <nav class="flex flex-col gap-2 font-medium text-slate-700 dark:text-slate-200">
+          <a href="#index" class="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-3">
+            <i data-lucide="home" class="w-5 h-5 text-blue-600"></i> Beranda
+          </a>
+          <a href="#kelas-10" class="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-3">
+            <i data-lucide="laptop" class="w-5 h-5 text-blue-600"></i> Kelas 10
+          </a>
+          <a href="#kelas-11-12" class="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-3">
+            <i data-lucide="code-2" class="w-5 h-5 text-purple-600"></i> Kelas 11–12
+          </a>
+          <a href="#tentang" class="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-3">
+            <i data-lucide="info" class="w-5 h-5 text-emerald-600"></i> Tentang Platform
+          </a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400 text-center">
+        © 2026 Informatika SMA • Media Belajar Digital
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Search Modal -->
+  <div id="searchModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md hidden items-start justify-center p-4 sm:p-6 md:p-20 overflow-y-auto">
+    <div class="bg-white dark:bg-slate-900 w-full max-w-2xl rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden animate-fade-in">
+      
+      <!-- Modal Search Bar Input -->
+      <div class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-3">
+        <i data-lucide="search" class="w-5 h-5 text-slate-400 shrink-0"></i>
+        <input 
+          type="text" 
+          id="searchModalInput" 
+          placeholder="Cari materi, topik, atau kata kunci..." 
+          class="w-full bg-transparent text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none text-base"
+        />
+        <button id="closeSearchBtn" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-semibold">
+          [Esc]
+        </button>
+      </div>
+
+      <!-- Search Results List -->
+      <div id="searchModalResults" class="max-h-96 overflow-y-auto p-2">
+        <div class="p-6 text-center text-slate-400 dark:text-slate-500 text-sm">
+          <i data-lucide="search" class="w-8 h-8 mx-auto mb-2 opacity-50"></i>
+          Ketik kata kunci untuk mencari judul, topik, atau isi materi Informatika.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Document Preview Modal -->
+  <div id="docPreviewModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="bg-white dark:bg-slate-900 w-full max-w-xl rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden animate-fade-in p-6">
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/60 text-blue-600 dark:text-blue-300 flex items-center justify-center">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 id="docModalTitle" class="font-bold text-slate-900 dark:text-white text-base">Preview Dokumen Word</h3>
+            <span id="docModalSubtitle" class="text-xs text-slate-500 dark:text-slate-400">Microsoft Word (.docx)</span>
+          </div>
+        </div>
+        <button id="closeDocPreviewBtn" class="p-2 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 mb-6">
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 text-xs sm:text-sm">
+          <div class="flex items-center gap-2 text-slate-700 dark:text-slate-200 font-semibold mb-1">
+            <i data-lucide="info" class="w-4 h-4 text-blue-500"></i> Informasi Dokumen Materi
+          </div>
+          <p id="docModalFilePath" class="text-slate-500 dark:text-slate-400 font-mono text-xs break-all"></p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 text-xs text-amber-900 dark:text-amber-200 leading-relaxed">
+          <strong>Catatan Preview:</strong> Preview dokumen dalam format <code>.docx</code> memerlukan aplikasi Microsoft Word atau Google Docs. Klik tombol <strong>Download DOCX</strong> untuk mengunduh dan membaca materi secara lengkap.
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+        <button id="closeDocPreviewFooterBtn" class="px-4 py-2 rounded-xl text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          Tutup
+        </button>
+        <a id="docModalDownloadBtn" href="#" download class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition shadow-md shadow-blue-500/20">
+          <i data-lucide="download" class="w-4 h-4"></i> Download DOCX
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main View Container -->
+  <main id="app" class="flex-grow">
+    <!-- Dynamic page content rendered by app.js -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200/80 dark:border-slate-800 mt-16 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2.5 mb-3">
+            <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">
+              <i data-lucide="code-2" class="w-5 h-5"></i>
+            </div>
+            <span class="font-extrabold text-lg text-slate-900 dark:text-white">Informatika SMA</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-sm">
+            Perpustakaan digital dan media pembelajaran terpadu mata pelajaran Informatika untuk siswa SMA kelas 10, 11, dan 12.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Navigasi Utama</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+            <li><a href="#index" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Beranda</a></li>
+            <li><a href="#kelas-10" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Kelas 10</a></li>
+            <li><a href="#kelas-11-12" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Kelas 11–12</a></li>
+            <li><a href="#tentang" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Tentang Platform</a></li>
+          </ul>
+        </div>
+
+        <!-- Category Highlights -->
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Bidang Pembelajaran</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+            <li>Berpikir Komputasional</li>
+            <li>Sistem Komputer</li>
+            <li>Jaringan Komputer</li>
+            <li>Algoritma & Pemrograman</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+        <p>© 2026 Informatika SMA — Digital Learning Hub. All rights reserved.</p>
+        <div class="flex items-center gap-2 text-slate-400">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span> Static & Standalone Platform
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Data & Scripts -->
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
