@@ -60,6 +60,29 @@ function setupEventListeners() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+  // Global Link Click Listener for Same-Hash Navigation (e.g. clicking #kuis while on #kuis result page)
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (link) {
+      const targetHash = link.getAttribute('href');
+      if (targetHash === '#kuis' && window.location.hash === '#kuis') {
+        if (typeof resetAndReturnToQuizMain === 'function') {
+          resetAndReturnToQuizMain();
+        } else if (typeof renderQuizMainPage === 'function') {
+          renderQuizMainPage();
+        }
+        closeMobileDrawer();
+        closeDocPreviewModal();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (targetHash === window.location.hash && targetHash !== '#') {
+        handleRoute();
+        closeMobileDrawer();
+        closeDocPreviewModal();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  });
+
   // Theme Toggle Listener
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', toggleTheme);
@@ -371,6 +394,14 @@ function handleRoute() {
   } else if (hash.startsWith('#materi/')) {
     const materialId = hash.replace('#materi/', '');
     renderMaterialDetail(materialId);
+  } else if (hash === '#kuis' || hash.startsWith('#kuis/')) {
+    if (typeof handleQuizRoute === 'function') {
+      handleQuizRoute(hash);
+    } else if (typeof renderQuizMainPage === 'function') {
+      renderQuizMainPage();
+    } else {
+      renderNotFound('Fitur Kuis belum dimuat.');
+    }
   } else if (hash === '#tentang') {
     renderAbout();
   } else {
@@ -389,7 +420,7 @@ function updateActiveNavLinks(hash) {
     const href = link.getAttribute('href');
     if ((!hash || hash === '#' || hash === '#index') && (href === '#index' || href === '#')) {
       link.classList.add('active');
-    } else if (hash && href === hash) {
+    } else if (hash && (href === hash || (hash.startsWith('#kuis') && href === '#kuis'))) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');

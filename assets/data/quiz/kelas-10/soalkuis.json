@@ -1,0 +1,100 @@
+{
+  "quiz": {
+    "id": "quiz-kelas-10",
+    "classLevel": "10",
+    "title": "Kuis Informatika Kelas 10",
+    "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 10 (Teknologi Informasi, Pemrosesan Komputer, Sistem Operasi, Jaringan, dan Keamanan Digital).",
+    "locked": true,
+    "maxQuestions": 15
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Apa yang dimaksud dengan Informatika?",
+      "options": [
+        "Ilmu sains yang mempelajari pengolahan data dan informasi menggunakan sistem komputasi",
+        "Cabang ilmu sains yang hanya mempelajari perakitan komponen perangkat keras komputer",
+        "Ilmu sosial yang berfokus pada penggunaan aplikasi peramban internet",
+        "Teknik mengetik cepat dan penggunaan aplikasi pengolah kata perkantoran"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 2,
+      "question": "Manakah di bawah ini yang merupakan sifat utama dari memori kerja RAM (Random Access Memory)?",
+      "options": [
+        "Non-volatile (data tersimpan secara permanen meskipun listrik padam)",
+        "Volatile (data akan hilang ketika perangkat komputer dimatikan atau kehilangan daya)",
+        "Memiliki kapasitas terbesar dalam hierarki media penyimpanan komputer",
+        "Digunakan khusus untuk menyimpan berkas file sistem operasi secara permanen"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "Elemen Central Processing Unit (CPU) yang bertugas melakukan perhitungan matematika dan operasi logika adalah...",
+      "options": [
+        "Control Unit (CU)",
+        "Arithmetic Logic Unit (ALU)",
+        "Register Memory",
+        "Solid State Drive (SSD)"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "Manakah di bawah ini yang merupakan fungsi utama Sistem Operasi (Operating System)?",
+      "options": [
+        "Mengedit dokumen teks dan mengolah data lembar kerja",
+        "Mengelola sumber daya perangkat keras dan menyediakan antarmuka bagi pengguna",
+        "Menghubungkan komputer langsung ke kabel jaringan telepon",
+        "Mengamankan fisik ruangan komputer dari ancaman kebakaran"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "Jenis jaringan komputer yang memiliki cakupan terbatas dalam satu ruangan atau laboratorium sekolah adalah...",
+      "options": [
+        "WAN (Wide Area Network)",
+        "LAN (Local Area Network)",
+        "MAN (Metropolitan Area Network)",
+        "SAN (Storage Area Network)"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 6,
+      "question": "Fungsi dari alamat IP (IP Address) pada sebuah peranti dalam jaringan adalah...",
+      "options": [
+        "Sebagai alamat fisik permanen yang dicetak pada papan sirkuit kartu jaringan",
+        "Sebagai pengidentifikasi logika unik pengiriman dan penerimaan paket data",
+        "Untuk mempercepat putaran kipas pendingin prosesor komputer",
+        "Sebagai kata sandi utama untuk masuk ke dalam aplikasi pengolah kata"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 7,
+      "question": "Upaya kejahatan siber yang menyamar sebagai pihak resmi untuk memancing dan mencuri kredensial sandi pengguna disebut...",
+      "options": [
+        "Phishing",
+        "Defragmentasi",
+        "Formatting",
+        "Subnetting"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 8,
+      "question": "Langkah praktis yang disarankan untuk meningkatkan keamanan akun dari peretasan kata sandi adalah...",
+      "options": [
+        "Menggunakan tanggal lahir sebagai kata sandi untuk semua akun",
+        "Mengaktifkan Otentikasi Dua Faktor (2FA) dan menggunakan sandi unik yang kuat",
+        "Menyimpan catatan kata sandi di kertas dekat layar monitor",
+        "Membagikan kata sandi kepada teman dekat agar tidak lupa"
+      ],
+      "answer": 1
+    }
+  ]
+}

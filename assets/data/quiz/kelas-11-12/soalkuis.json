@@ -1,0 +1,100 @@
+{
+  "quiz": {
+    "id": "quiz-kelas-11-12",
+    "classLevel": "11-12",
+    "title": "Kuis Informatika Kelas 11–12",
+    "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 11–12 Gabungan (Pengantar Jaringan, Topologi, Perangkat Jaringan, Subnetting, dan Konfigurasi IP).",
+    "locked": true,
+    "maxQuestions": 15
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Model arsitektur jaringan komputer yang memusatkan layanan pada satu komputer terdedikasi untuk melayani komputer klien adalah...",
+      "options": [
+        "Peer-to-Peer (P2P)",
+        "Client-Server",
+        "Ring Architecture",
+        "Mesh Redundant"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question": "Topologi jaringan fisik yang menghubungkan setiap komputer ke peranti Switch/Hub pusat disebut...",
+      "options": [
+        "Topologi Bus",
+        "Topologi Star",
+        "Topologi Ring",
+        "Topologi Tree"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "Perangkat jaringan keras yang bekerja pada Network Layer (Layer 3) untuk menghubungkan dua atau lebih sub-jaringan yang berbeda adalah...",
+      "options": [
+        "Switch Layer 2",
+        "Router",
+        "Kabel UTP",
+        "Access Point"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "Media kabel transmisi jaringan yang menggunakan gelombang sinyal cahaya untuk pengiriman data kecepatan tinggi jarak jauh adalah...",
+      "options": [
+        "Kabel UTP Cat5e",
+        "Kabel Koaksial",
+        "Kabel Fiber Optik",
+        "Kabel Telepon Tembaga"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question": "Alamat IPv4 terdiri dari berapa bit angka biner yang terbagi ke dalam 4 oktet desimal?",
+      "options": [
+        "16 bit",
+        "32 bit",
+        "64 bit",
+        "128 bit"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 6,
+      "question": "Tujuan utama dari teknik Subnetting pada pengalamatan IP Address adalah...",
+      "options": [
+        "Meningkatkan kecepatan putaran kipas pendingin komputer",
+        "Membagi satu jaringan besar menjadi beberapa sub-jaringan kecil agar lalu lintas broadcast lebih efisien",
+        "Menghapus kebutuhan kabel pada jaringan komputer lokal",
+        "Mengganti kata sandi router secara otomatis setiap jam"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 7,
+      "question": "Layanan jaringan yang bertugas membagikan alamat IP secara otomatis kepada komputer klien yang baru terhubung adalah...",
+      "options": [
+        "DNS (Domain Name System)",
+        "DHCP (Dynamic Host Configuration Protocol)",
+        "HTTP (HyperText Transfer Protocol)",
+        "FTP (File Transfer Protocol)"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 8,
+      "question": "Perintah utilitas command line yang digunakan untuk menguji latensi dan respon konektivitas antar komputer dalam jaringan adalah...",
+      "options": [
+        "ipconfig",
+        "ping",
+        "cls",
+        "mkdir"
+      ],
+      "answer": 1
+    }
+  ]
+}
