@@ -207,7 +207,7 @@ const FALLBACK_MATERIALS = [
     "category": "Berpikir Komputasional",
     "description": "Pengenalan konsep berpikir komputasional untuk menyelesaikan masalah secara sistematis melalui 4 pilar utama.",
     "duration": "45 menit",
-    "locked": true,
+    "locked": false,
     "document": {
       "available": false,
       "file": "assets/materials/kelas-10/pertemuan-06/Materi-Pertemuan-6-kelas-10.docx"
@@ -217,8 +217,26 @@ const FALLBACK_MATERIALS = [
         "Memahami konsep dasar Berpikir Komputasional",
         "Mengenal tahapan Dekomposisi, Pengenalan Pola, Abstraksi, dan Algoritma"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Empat Pilar Berpikir Komputasional",
+          "paragraphs": [
+            "Berpikir komputasional adalah metode memecahkan masalah kompleks dengan menerapkan teknik-teknik sains komputer. Terdapat 4 pilar utama: Dekomposisi, Pengenalan Pola, Abstraksi, dan Perancangan Algoritma.",
+            "Dekomposisi memecah masalah besar menjadi bagian kecil, pengenalan pola mencari kesamaan, abstraksi berfokus pada informasi penting, dan algoritma menyusun langkah penyelesaian secara sistematis."
+          ]
+        },
+        {
+          "heading": "Penerapan Berpikir Komputasional",
+          "paragraphs": [
+            "Penerapan berpikir komputasional tidak hanya terbatas pada pemrograman komputer, tetapi juga dapat diterapkan dalam kehidupan sehari-hari untuk menyelesaikan berbagai masalah rumit secara efektif dan efisien."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Berpikir komputasional adalah landasan pemecahan masalah secara sistematis.",
+        "Empat pilar utamanya yaitu dekomposisi, pengenalan pola, abstraksi, dan algoritma.",
+        "Teknik ini dapat diterapkan dalam masalah komputer maupun kehidupan sehari-hari."
+      ]
     }
   },
   {
@@ -239,8 +257,26 @@ const FALLBACK_MATERIALS = [
         "Memahami konsep pengolahan data mentah",
         "Mengenal fungsi dasar spreadsheet"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Konsep Dasar Analisis Data",
+          "paragraphs": [
+            "Analisis data adalah proses mengumpulkan, membersihkan, dan mengolah data mentah menjadi informasi bermanfaat yang dapat digunakan untuk mengambil keputusan.",
+            "Data dapat berupa teks, angka, maupun simbol yang dikategorikan menjadi data kualitatif dan data kuantitatif."
+          ]
+        },
+        {
+          "heading": "Pengolahan Data dengan Spreadsheet",
+          "paragraphs": [
+            "Aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets digunakan untuk mengorganisasi data dalam baris dan kolom serta menjalankan fungsi rumus aritmetika dasar (SUM, AVERAGE, COUNT)."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Analisis data mengubah data mentah menjadi informasi yang bermanfaat.",
+        "Data dibedakan menjadi kualitatif (kategori) dan kuantitatif (angka).",
+        "Spreadsheet memudahkan pengolahan data numerik melalui fungsi dan formula dasar."
+      ]
     }
   },
   {
@@ -261,8 +297,26 @@ const FALLBACK_MATERIALS = [
         "Memahami struktur variabel dan tipe data",
         "Mengenal sintaks percabangan dasar"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Variabel dan Tipe Data",
+          "paragraphs": [
+            "Pemrograman komputer membutuhkan variabel sebagai wadah penampung nilai di memori. Tipe data menentukan jenis nilai yang disimpan seperti integer (angka bulat), float (desimal), string (teks), dan boolean (benar/salah).",
+            "Dalam bahasa Python, deklarasi variabel dilakukan secara langsung tanpa perlu mendefinisikan tipe data secara eksplisit."
+          ]
+        },
+        {
+          "heading": "Struktur Kontrol Percabangan",
+          "paragraphs": [
+            "Percabangan (if-else) memungkinkan program mengambil keputusan berdasarkan kondisi logis tertentu. Jika kondisi bernilai benar (True), blok kode tertentu akan dieksekusi."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Variabel menyimpan data sementara di memori komputer.",
+        "Tipe data utama meliputi integer, float, string, dan boolean.",
+        "Struktur percabangan (if-else) mengontrol alur eksekusi berdasarkan kondisi logis."
+      ]
     }
   },
   {
@@ -283,8 +337,26 @@ const FALLBACK_MATERIALS = [
         "Memahami prinsip kewargaan digital",
         "Mengetahui dampak positif dan negatif teknologi"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Kewargaan Digital & Etika Internet",
+          "paragraphs": [
+            "Kewargaan digital merujuk pada norma perilaku yang bertanggung jawab dalam menggunakan teknologi informasi. Pengguna internet harus menjaga etika komunikasi (netiket) dan menghormati hak cipta karya digital.",
+            "Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) mengatur norma hukum terkait penggunaan teknologi dan transaksi siber di Indonesia."
+          ]
+        },
+        {
+          "heading": "Dampak Transformasi Digital",
+          "paragraphs": [
+            "Teknologi informatika membawa dampak positif berupa efisiensi komunikasi dan akses informasi luas, namun juga menimbulkan dampak negatif seperti penyebaran hoaks, perundungan siber (cyberbullying), dan ketergantungan digital."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Kewargaan digital menuntut etika dan tanggung jawab saat berinteraksi di dunia siber.",
+        "UU ITE memberikan payung hukum bagi aktivitas dan transaksi di internet.",
+        "Perlu kesadaran kritis untuk memilah informasi dan menghindari penyebaran hoaks."
+      ]
     }
   },
   {
@@ -305,8 +377,26 @@ const FALLBACK_MATERIALS = [
         "Mengenal fungsi utama aplikasi perkantoran",
         "Memahami pembuatan dokumen dan lembar kerja dasar"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Integrasi Aplikasi Perkantoran",
+          "paragraphs": [
+            "Paket aplikasi perkantoran umumnya terdiri dari perangkat lunak pengolah kata (Word Processor), pengolah angka (Spreadsheet), dan pembuat presentasi (Presentation).",
+            "Fitur integrasi seperti OLE (Object Linking and Embedding) memungkinkan penyisipan grafik spreadsheet secara otomatis ke dalam dokumen surat atau presentasi."
+          ]
+        },
+        {
+          "heading": "Pemanfaatan Fitur Otomatisasi Dokumen",
+          "paragraphs": [
+            "Fitur seperti Mail Merge pada pengolah kata digunakan untuk membuat dokumen massal (seperti undangan atau sertifikat) secara otomatis dengan menghubungkan daftar data dari pengolah angka."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Aplikasi perkantoran mencakup pengolah kata, pengolah angka, dan presentasi.",
+        "Integrasi objek memungkinkan penggabungan data antar aplikasi secara dinamis.",
+        "Fitur Mail Merge mempermudah pembuatan dokumen massal secara otomatis."
+      ]
     }
   },
   {
@@ -508,11 +598,11 @@ const FALLBACK_MATERIALS = [
     "id": "informatika-kelas-11-12-p6",
     "classLevel": "11-12",
     "meeting": 6,
-    "title": "Keamanan Jaringan",
+    "title": "Keamanan Jaringan Dasar",
     "category": "Keamanan Digital",
     "description": "Memahami konsep perlindungan firewall, inspeksi paket data, enkripsi Wi-Fi (WPA2/WPA3), dan pencegahan akses tak berizin.",
     "duration": "50 menit",
-    "locked": true,
+    "locked": false,
     "document": {
       "available": false,
       "file": "assets/materials/kelas-11-12/pertemuan-06/Materi-Pertemuan-6-kelas-11-12.docx"
@@ -522,8 +612,26 @@ const FALLBACK_MATERIALS = [
         "Memahami fungsi Firewall dalam menyaring lalu lintas jaringan",
         "Mengenal standar enkripsi jaringan nirkabel Wi-Fi"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Prinsip Kerja Firewall Jaringan",
+          "paragraphs": [
+            "Firewall adalah sistem keamanan yang memantau dan menyaring lalu lintas jaringan masuk dan keluar berdasarkan aturan keamanan yang telah ditentukan.",
+            "Firewall bekerja sebagai benteng pertahanan antara jaringan internal yang terpercaya dan jaringan luar (internet) yang tidak terpercaya."
+          ]
+        },
+        {
+          "heading": "Enkripsi & Keamanan Wi-Fi",
+          "paragraphs": [
+            "Jaringan nirkabel rawan terhadap penyadapan. Penggunaan protokol enkripsi seperti WPA2 atau WPA3 melindungi lalu lintas data Wi-Fi agar tidak dapat dibaca oleh pihak yang tidak berwenang."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Firewall menyaring lalu lintas data untuk mencegah akses tak berizin.",
+        "WPA2 dan WPA3 adalah standar enkripsi utama untuk mengamankan koneksi Wi-Fi.",
+        "Keamanan jaringan melindungi kerahasiaan dan integritas data pengguna."
+      ]
     }
   },
   {
@@ -544,8 +652,26 @@ const FALLBACK_MATERIALS = [
         "Memahami metode berbagi folder dan file lokal",
         "Mengatur hak akses pembacaan dan penulisan berkas terbagi"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Konsep File & Printer Sharing",
+          "paragraphs": [
+            "Berbagi sumber daya (Resource Sharing) memungkinkan beberapa perangkat komputer dalam satu jaringan lokal untuk mengakses file, folder, dan printer yang sama secara bersamaan.",
+            "Metode ini meningkatkan efisiensi operasional dan mengurangi kebutuhan perangkat keras ganda di lingkungan kerja."
+          ]
+        },
+        {
+          "heading": "Pengaturan Hak Akses (Permissions)",
+          "paragraphs": [
+            "Saat membagikan folder, pengelola jaringan harus mengatur tingkat hak akses seperti Read (hanya membaca), Write/Modify (mengubah file), atau Full Control untuk mencegah modifikasi data yang tidak diinginkan."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Resource sharing memungkinkan penggunaan bersama file dan printer di jaringan lokal.",
+        "Pengaturan hak akses (Read/Write) menjaga keamanan berkas terbagi.",
+        "Protokol seperti SMB (Server Message Block) memfasilitasi berbagi berkas di OS Windows/Linux."
+      ]
     }
   },
   {
@@ -566,8 +692,26 @@ const FALLBACK_MATERIALS = [
         "Mengenal perintah diagnostik `ipconfig` dan `traceroute`",
         "Mengidentifikasi isolasi masalah konektivitas terputus"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Perkakas Diagnostik Command Line",
+          "paragraphs": [
+            "Utilitas baris perintah (CLI) seperti ipconfig digunakan untuk memeriksa konfigurasi IP komputer, ping untuk menguji respon koneksi, dan tracert (traceroute) untuk melacak rute lompatan paket data.",
+            "Menguasai perkakas diagnostik dasar mempercepat identifikasi titik kegagalan pada jalur komunikasi jaringan."
+          ]
+        },
+        {
+          "heading": "Langkah Troubleshooting Jaringan",
+          "paragraphs": [
+            "Troubleshooting dilakukan secara bertahap mulai dari pemeriksaan fisik (kabel dan indikator lampu LAN), dilanjutkan dengan pengujian logika alamat IP dan pengaturan DNS."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Utilitas ipconfig, ping, dan tracert adalah alat dasar diagnostik jaringan.",
+        "Troubleshooting dimulai dari pengecekan fisik kabel hingga pengujian logika IP.",
+        "Pencarian masalah secara terstruktur menghemat waktu perbaikan jaringan."
+      ]
     }
   },
   {
@@ -588,8 +732,26 @@ const FALLBACK_MATERIALS = [
         "Memahami peran ISP (Internet Service Provider)",
         "Menjelaskan pemetaan nama domain oleh DNS Server"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Infrastruktur ISP & Backbone Internet",
+          "paragraphs": [
+            "Internet Service Provider (ISP) menyediakan jalur akses jaringan bagi pelanggan menuju backbone internet global melalui kabel serat optik bawah laut dan satelit.",
+            "Lalu lintas data antar ISP dihubungkan melalui titik pertukaran internet (Internet Exchange Point / IXP)."
+          ]
+        },
+        {
+          "heading": "Peran Domain Name System (DNS)",
+          "paragraphs": [
+            "DNS bertindak sebagai buku telepon internet yang menerjemahkan nama domain yang mudah diingat manusia (seperti www.contoh.com) menjadi alamat IP numerik yang dipahami oleh komputer."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "ISP menghubungkan perangkat lokal ke infrastruktur backbone internet global.",
+        "DNS menerjemahkan nama domain web menjadi alamat IP numerik.",
+        "Komunikasi internet mengandalkan sistem routing terdistribusi di seluruh dunia."
+      ]
     }
   },
   {
@@ -610,12 +772,32 @@ const FALLBACK_MATERIALS = [
         "Memahami konsep dasar Cloud Computing dan Cloud Storage",
         "Mengenal fitur kolaborasi dokumen bersama secara real-time"
       ],
-      "sections": [],
-      "keyPoints": []
+      "sections": [
+        {
+          "heading": "Konsep Dasar Komputasi Awan (Cloud Computing)",
+          "paragraphs": [
+            "Cloud computing menyediakan layanan komputasi seperti penyimpanan data, server, basis data, dan perangkat lunak melalui jaringan internet secara fleksibel.",
+            "Layanan Cloud Storage (seperti Google Drive atau OneDrive) memungkinkan pengguna menyimpan dan menyinkronkan dokumen di server terpusat secara aman."
+          ]
+        },
+        {
+          "heading": "Kolaborasi Dokumen Real-Time",
+          "paragraphs": [
+            "Fitur kolaborasi online memungkinkan beberapa pengguna menyunting dokumen, lembar kerja, atau presentasi yang sama secara bersamaan secara real-time dari lokasi berbeda.",
+            "Fitur riwayat versi (version history) memfasilitasi pembatalan perubahan dan pelacakan kontribusi setiap pengguna."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Cloud Storage menyimpan dan menyinkronkan berkas secara terpusat via internet.",
+        "Kolaborasi online memungkinkan penyuntingan dokumen bersama secara real-time.",
+        "Riwayat versi membantu melacak dan memulihkan perubahan dokumen."
+      ]
     }
   }
 ];
 
+/**
 /**
  * Loads materials dynamically from assets/data/materials.json with fallback to FALLBACK_MATERIALS
  * @returns {Promise<Array>} List of learning materials
