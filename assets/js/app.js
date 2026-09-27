@@ -429,6 +429,29 @@ function updateActiveNavLinks(hash) {
 }
 
 /**
+ * Helper: Generates dynamic status text for open & locked meetings
+ * (e.g. "Pertemuan 1–6 Terbuka, Pertemuan 7–10 Terkunci")
+ */
+function getMeetingStatusSummary(materialsList) {
+  if (!materialsList || materialsList.length === 0) return '';
+  const unlocked = materialsList.filter(m => !m.locked).map(m => m.meeting);
+  const locked = materialsList.filter(m => m.locked).map(m => m.meeting);
+
+  const parts = [];
+  if (unlocked.length > 0) {
+    const minU = Math.min(...unlocked);
+    const maxU = Math.max(...unlocked);
+    parts.push(unlocked.length === 1 ? `Pertemuan ${minU} Terbuka` : `Pertemuan ${minU}–${maxU} Terbuka`);
+  }
+  if (locked.length > 0) {
+    const minL = Math.min(...locked);
+    const maxL = Math.max(...locked);
+    parts.push(locked.length === 1 ? `Pertemuan ${minL} Terkunci` : `Pertemuan ${minL}–${maxL} Terkunci`);
+  }
+  return parts.join(', ');
+}
+
+/**
  * Page Renderer: Beranda (Home)
  */
 function renderHome() {
@@ -440,6 +463,12 @@ function renderHome() {
   const unlockedCount = allMaterials.filter(m => !m.locked).length;
   const lockedCount = allMaterials.filter(m => m.locked).length;
   const docCount = allMaterials.filter(m => !m.locked && m.document && m.document.available).length;
+
+  // Dynamic open meetings text
+  const openMsHome = allMaterials.filter(m => !m.locked).map(m => m.meeting);
+  const openMsHomeText = openMsHome.length > 0 
+    ? (openMsHome.length === 1 ? `Pertemuan ${Math.min(...openMsHome)}` : `Pertemuan ${Math.min(...openMsHome)}–${Math.max(...openMsHome)}`)
+    : 'Modul';
 
   // Show unlocked or first 4 materials
   const recentMaterials = allMaterials.filter(m => !m.locked).slice(0, 4);
@@ -566,7 +595,7 @@ function renderHome() {
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
             <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Materi Pembelajaran Terbuka</h2>
-            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Pertemuan 1–5 siap dipelajari dan diunduh dokumen Word-nya.</p>
+            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">${openMsHomeText} siap dipelajari dan diunduh dokumen Word-nya.</p>
           </div>
           <a href="#kelas-10" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
             Semua Roadmap <i data-lucide="chevron-right" class="w-4 h-4"></i>
@@ -587,12 +616,26 @@ function renderHome() {
 function renderClassPage(classLevel) {
   const isClass10 = classLevel === '10';
   const classTitle = isClass10 ? 'Kelas 10' : 'Kelas 11–12';
-  const classDescription = isClass10 
-    ? 'Roadmap materi Informatika SMA Kelas 10 (Pertemuan 1–5 Terbuka, Pertemuan 6–10 Terkunci).'
-    : 'Roadmap gabungan materi Informatika SMA Kelas 11 & 12 (Pertemuan 1–5 Terbuka, Pertemuan 6–10 Terkunci).';
 
   // Filter materials for this class level
   const classMaterials = allMaterials.filter(m => m.classLevel === classLevel);
+  const statusSummary = getMeetingStatusSummary(classMaterials);
+  const statusText = statusSummary ? ` (${statusSummary})` : '';
+
+  const classDescription = isClass10 
+    ? `Roadmap materi Informatika SMA Kelas 10${statusText}.`
+    : `Roadmap gabungan materi Informatika SMA Kelas 11 & 12${statusText}.`;
+
+  const unlockedMs = classMaterials.filter(m => !m.locked).map(m => m.meeting);
+  const lockedMs = classMaterials.filter(m => m.locked).map(m => m.meeting);
+
+  const unlockedBadge = unlockedMs.length > 0 
+    ? (unlockedMs.length === 1 ? `P${Math.min(...unlockedMs)} Terbuka` : `P${Math.min(...unlockedMs)}–P${Math.max(...unlockedMs)} Terbuka`) 
+    : '';
+
+  const lockedBadge = lockedMs.length > 0 
+    ? (lockedMs.length === 1 ? `P${Math.min(...lockedMs)} Terkunci` : `P${Math.min(...lockedMs)}–P${Math.max(...lockedMs)} Terkunci`) 
+    : '';
 
   // Extract unique categories for filter tabs
   const categories = ['Semua', ...new Set(classMaterials.map(m => m.category))];
@@ -623,10 +666,10 @@ function renderClassPage(classLevel) {
             </span>
             <h1 class="text-3xl sm:text-4xl font-extrabold mb-3">Materi Informatika ${classTitle}</h1>
             <p class="text-blue-100 text-sm sm:text-base leading-relaxed mb-4">${classDescription}</p>
-            <div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-xl bg-white/10 text-xs font-medium backdrop-blur-sm">
-              <span><i data-lucide="check-circle-2" class="w-4 h-4 inline text-emerald-300"></i> P1–P5 Terbuka</span>
-              <span>•</span>
-              <span><i data-lucide="lock" class="w-4 h-4 inline text-amber-300"></i> P6–P10 Terkunci</span>
+            <div class="inline-flex flex-wrap items-center gap-3 px-3 py-1.5 rounded-xl bg-white/10 text-xs font-medium backdrop-blur-sm">
+              ${unlockedBadge ? `<span><i data-lucide="check-circle-2" class="w-4 h-4 inline text-emerald-300"></i> ${unlockedBadge}</span>` : ''}
+              ${unlockedBadge && lockedBadge ? `<span>•</span>` : ''}
+              ${lockedBadge ? `<span><i data-lucide="lock" class="w-4 h-4 inline text-amber-300"></i> ${lockedBadge}</span>` : ''}
             </div>
           </div>
         </div>
