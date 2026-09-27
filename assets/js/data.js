@@ -798,13 +798,12 @@ const FALLBACK_MATERIALS = [
 ];
 
 /**
-/**
  * Loads materials dynamically from assets/data/materials.json with fallback to FALLBACK_MATERIALS
  * @returns {Promise<Array>} List of learning materials
  */
 async function fetchMaterialsData() {
   try {
-    const response = await fetch('./assets/data/materials.json');
+    const response = await fetch('./assets/data/materials.json?v=' + Date.now());
     if (!response.ok) {
       throw new Error(`HTTP Error status: ${response.status}`);
     }
