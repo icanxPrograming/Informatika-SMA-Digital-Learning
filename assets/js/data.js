@@ -209,7 +209,7 @@ const FALLBACK_MATERIALS = [
     "duration": "45 menit",
     "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-10/pertemuan-06/Materi-Pertemuan-6-kelas-10.docx"
     },
     "content": {
@@ -604,7 +604,7 @@ const FALLBACK_MATERIALS = [
     "duration": "50 menit",
     "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-11-12/pertemuan-06/Materi-Pertemuan-6-kelas-11-12.docx"
     },
     "content": {
