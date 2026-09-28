@@ -3,98 +3,190 @@
     "id": "quiz-kelas-10",
     "classLevel": "10",
     "title": "Kuis Informatika Kelas 10",
-    "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 10 (Teknologi Informasi, Pemrosesan Komputer, Sistem Operasi, Jaringan, dan Keamanan Digital).",
-    "locked": true,
+    "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 10 (Berpikir Komputasional dan Pemecahan Masalah Sistematis).",
+    "locked": false,
     "maxQuestions": 15
   },
   "questions": [
     {
       "id": 1,
-      "question": "Apa yang dimaksud dengan Informatika?",
+      "question": "Apa pengertian sederhana dari berpikir komputasional (computational thinking)?",
       "options": [
-        "Ilmu sains yang mempelajari pengolahan data dan informasi menggunakan sistem komputasi",
-        "Cabang ilmu sains yang hanya mempelajari perakitan komponen perangkat keras komputer",
-        "Ilmu sosial yang berfokus pada penggunaan aplikasi peramban internet",
-        "Teknik mengetik cepat dan penggunaan aplikasi pengolah kata perkantoran"
+        "Cara membuat program aplikasi menggunakan komputer canggih",
+        "Cara berpikir untuk menyelesaikan masalah secara logis, sistematis, dan terstruktur",
+        "Cara kerja komputer dalam mengolah data digital secara otomatis",
+        "Cara belajar menggunakan perangkat keras dan perangkat lunak",
+        "Cara mengetik kode pemrograman dengan cepat dan benar"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "id": 2,
-      "question": "Manakah di bawah ini yang merupakan sifat utama dari memori kerja RAM (Random Access Memory)?",
+      "question": "Manakah pernyataan yang paling tepat mengenai hubungan antara berpikir komputasional dan komputer?",
       "options": [
-        "Non-volatile (data tersimpan secara permanen meskipun listrik padam)",
-        "Volatile (data akan hilang ketika perangkat komputer dimatikan atau kehilangan daya)",
-        "Memiliki kapasitas terbesar dalam hierarki media penyimpanan komputer",
-        "Digunakan khusus untuk menyimpan berkas file sistem operasi secara permanen"
+        "Berpikir komputasional hanya dapat dilakukan jika menggunakan komputer",
+        "Berpikir komputasional sama persis dengan kegiatan coding",
+        "Berpikir komputasional tidak selalu berarti menggunakan komputer atau membuat program",
+        "Berpikir komputasional diciptakan khusus untuk para teknisi komputer",
+        "Komputer tidak dapat berfungsi tanpa adanya konsep berpikir komputasional"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 3,
-      "question": "Elemen Central Processing Unit (CPU) yang bertugas melakukan perhitungan matematika dan operasi logika adalah...",
+      "question": "Manfaat utama dari proses dekomposisi dalam pemecahan masalah adalah...",
       "options": [
-        "Control Unit (CU)",
-        "Arithmetic Logic Unit (ALU)",
-        "Register Memory",
-        "Solid State Drive (SSD)"
+        "Mengabaikan informasi yang tidak penting",
+        "Mencari kesamaan atau pola yang muncul dari masalah",
+        "Menyusun urutan langkah penyelesaian masalah",
+        "Memecah masalah yang besar atau kompleks menjadi bagian yang lebih kecil",
+        "Menebak penyebab masalah secara acak"
       ],
-      "answer": 1
+      "answer": 3
     },
     {
       "id": 4,
-      "question": "Manakah di bawah ini yang merupakan fungsi utama Sistem Operasi (Operating System)?",
+      "question": "Perhatikan deret angka berikut: 3, 6, 9, 12, ... Angka berikutnya berdasarkan pengenalan pola adalah...",
       "options": [
-        "Mengedit dokumen teks dan mengolah data lembar kerja",
-        "Mengelola sumber daya perangkat keras dan menyediakan antarmuka bagi pengguna",
-        "Menghubungkan komputer langsung ke kabel jaringan telepon",
-        "Mengamankan fisik ruangan komputer dari ancaman kebakaran"
+        "13",
+        "14",
+        "15",
+        "16",
+        "18"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 5,
-      "question": "Jenis jaringan komputer yang memiliki cakupan terbatas dalam satu ruangan atau laboratorium sekolah adalah...",
+      "question": "Proses memilih informasi yang penting dan mengabaikan informasi yang tidak diperlukan untuk menyelesaikan suatu masalah disebut...",
       "options": [
-        "WAN (Wide Area Network)",
-        "LAN (Local Area Network)",
-        "MAN (Metropolitan Area Network)",
-        "SAN (Storage Area Network)"
+        "Dekomposisi",
+        "Pengenalan Pola",
+        "Abstraksi",
+        "Algoritma",
+        "Troubleshooting"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 6,
-      "question": "Fungsi dari alamat IP (IP Address) pada sebuah peranti dalam jaringan adalah...",
+      "question": "Saat Anda ingin mencari rute tercepat menuju sekolah, informasi manakah yang termasuk ke dalam konsep abstraksi (informasi penting)?",
       "options": [
-        "Sebagai alamat fisik permanen yang dicetak pada papan sirkuit kartu jaringan",
-        "Sebagai pengidentifikasi logika unik pengiriman dan penerimaan paket data",
-        "Untuk mempercepat putaran kipas pendingin prosesor komputer",
-        "Sebagai kata sandi utama untuk masuk ke dalam aplikasi pengolah kata"
+        "Warna pagar rumah tetangga di sepanjang jalan",
+        "Jenis kendaraan lain yang lewat di jalan raya",
+        "Kondisi lalu lintas, jarak, dan jalan yang tersedia",
+        "Jumlah pohon yang ditanam di pinggir jalan",
+        "Merek motor yang digunakan oleh pengendara lain"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 7,
+      "question": "Apa definisi dari algoritma dalam konteks berpikir komputasional?",
+      "options": [
+        "Barisan kode pemrograman tingkat tinggi",
+        "Serangkaian langkah yang disusun secara logis dan berurutan untuk menyelesaikan masalah",
+        "Rumus matematika untuk menghitung kecepatan data",
+        "Proses memecah masalah besar menjadi kecil",
+        "Perangkat keras utama yang menjalankan komputer"
       ],
       "answer": 1
     },
     {
-      "id": 7,
-      "question": "Upaya kejahatan siber yang menyamar sebagai pihak resmi untuk memancing dan mencuri kredensial sandi pengguna disebut...",
+      "id": 8,
+      "question": "Ketika menghadapi komputer yang tidak bisa terhubung ke internet, langkah awal dalam berpikir komputasional yang tepat adalah...",
       "options": [
-        "Phishing",
-        "Defragmentasi",
-        "Formatting",
-        "Subnetting"
+        "Langsung membawa komputer ke tempat servis",
+        "Membeli router baru tanpa memeriksa apapun",
+        "Memeriksa masalah secara bertahap (mulai dari status Wi-Fi hingga jaringan)",
+        "Memformat ulang sistem operasi komputer",
+        "Menyimpulkan bahwa kartu jaringan komputer rusak"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 9,
+      "question": "Manakah di bawah ini yang bukan merupakan empat konsep utama berpikir komputasional?",
+      "options": [
+        "Dekomposisi",
+        "Pengenalan Pola",
+        "Abstraksi",
+        "Visualisasi",
+        "Algoritma"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 10,
+      "question": "Dalam kasus mencari file yang hilang di komputer, memfokuskan perhatian pada nama file, ekstensi, lokasi, dan waktu pembuatan termasuk ke dalam konsep...",
+      "options": [
+        "Dekomposisi",
+        "Abstraksi",
+        "Algoritma",
+        "Pengenalan Pola",
+        "Kompilasi"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 11,
+      "question": "Apa tujuan dari proses \"Pengenalan Pola\" (Pattern Recognition)?",
+      "options": [
+        "Agar kita tidak perlu selalu menyelesaikan masalah dari awal dengan mencari kesamaan atau hubungan",
+        "Untuk menghapus file sampah yang tidak berguna di komputer",
+        "Untuk mematikan aplikasi yang berjalan di latar belakang",
+        "Untuk menyembunyikan informasi yang tidak penting",
+        "Untuk menguji kecepatan koneksi internet"
       ],
       "answer": 0
     },
     {
-      "id": 8,
-      "question": "Langkah praktis yang disarankan untuk meningkatkan keamanan akun dari peretasan kata sandi adalah...",
+      "id": 12,
+      "question": "Kesalahan yang sering terjadi saat seseorang mencoba menyelesaikan suatu masalah adalah...",
       "options": [
-        "Menggunakan tanggal lahir sebagai kata sandi untuk semua akun",
-        "Mengaktifkan Otentikasi Dua Faktor (2FA) dan menggunakan sandi unik yang kuat",
-        "Menyimpan catatan kata sandi di kertas dekat layar monitor",
-        "Membagikan kata sandi kepada teman dekat agar tidak lupa"
+        "Mengikuti langkah-langkah yang jelas dan terstruktur",
+        "Memahami pesan error dengan teliti",
+        "Langsung menyimpulkan penyebab tanpa pemeriksaan dan mencoba secara acak",
+        "Membagi masalah menjadi bagian kecil",
+        "Mencari pola dari permasalahan serupa"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 13,
+      "question": "Mengapa berpikir komputasional penting dalam kehidupan sehari-hari?",
+      "options": [
+        "Membantu kita menyelesaikan masalah dengan lebih teratur dan mengurangi kesalahan",
+        "Memaksa kita untuk selalu menggunakan laptop setiap hari",
+        "Membuat kita bisa meretas sistem keamanan jaringan",
+        "Menghilangkan semua masalah yang ada di sekolah",
+        "Mempercepat koneksi internet secara otomatis"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 14,
+      "question": "Manakah aktivitas sehari-hari di bawah ini yang menerapkan konsep algoritma?",
+      "options": [
+        "Memilih warna baju yang disukai",
+        "Mengikuti urutan langkah-langkah saat memasak mi instan",
+        "Mengingat nama teman sekelas",
+        "Melihat pemandangan di luar jendela",
+        "Menebak angka secara acak"
       ],
       "answer": 1
+    },
+    {
+      "id": 15,
+      "question": "Kesimpulan utama dari materi pembelajaran berpikir komputasional adalah...",
+      "options": [
+        "Teknologi hanya tentang perangkat keras yang mahal",
+        "Komputer dapat berpikir sendiri tanpa bantuan manusia",
+        "Teknologi bukan hanya soal perangkat, tetapi bagaimana manusia berpikir dan merumuskan solusi secara terstruktur",
+        "Semua masalah di dunia harus diselesaikan menggunakan komputer",
+        "Pemrograman adalah satu-satunya cara melatih otak manusia"
+      ],
+      "answer": 2
     }
   ]
 }

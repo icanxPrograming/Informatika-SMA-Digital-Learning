@@ -3,98 +3,190 @@
     "id": "quiz-kelas-11-12",
     "classLevel": "11-12",
     "title": "Kuis Informatika Kelas 11–12",
-    "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 11–12 Gabungan (Pengantar Jaringan, Topologi, Perangkat Jaringan, Subnetting, dan Konfigurasi IP).",
-    "locked": true,
+    "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 11–12 (Keamanan Jaringan, Konfigurasi, dan Proteksi Digital).",
+    "locked": false,
     "maxQuestions": 15
   },
   "questions": [
     {
       "id": 1,
-      "question": "Model arsitektur jaringan komputer yang memusatkan layanan pada satu komputer terdedikasi untuk melayani komputer klien adalah...",
+      "question": "Apa definisi dari keamanan jaringan (network security)?",
       "options": [
-        "Peer-to-Peer (P2P)",
-        "Client-Server",
-        "Ring Architecture",
-        "Mesh Redundant"
+        "Upaya untuk mempercepat kecepatan transfer data dalam internet",
+        "Upaya untuk melindungi jaringan, perangkat, dan data yang melewati jaringan dari akses atau gangguan yang tidak diinginkan",
+        "Proses menghubungkan beberapa komputer menggunakan kabel LAN atau Wi-Fi",
+        "Pengaturan alamat IP otomatis menggunakan DHCP pada router",
+        "Cara membuat program aplikasi agar bisa terhubung ke server pusat"
       ],
       "answer": 1
     },
     {
       "id": 2,
-      "question": "Topologi jaringan fisik yang menghubungkan setiap komputer ke peranti Switch/Hub pusat disebut...",
+      "question": "Manakah pernyataan yang paling tepat mengenai hubungan konfigurasi jaringan dan keamanan jaringan?",
       "options": [
-        "Topologi Bus",
-        "Topologi Star",
-        "Topologi Ring",
-        "Topologi Tree"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 3,
-      "question": "Perangkat jaringan keras yang bekerja pada Network Layer (Layer 3) untuk menghubungkan dua atau lebih sub-jaringan yang berbeda adalah...",
-      "options": [
-        "Switch Layer 2",
-        "Router",
-        "Kabel UTP",
-        "Access Point"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 4,
-      "question": "Media kabel transmisi jaringan yang menggunakan gelombang sinyal cahaya untuk pengiriman data kecepatan tinggi jarak jauh adalah...",
-      "options": [
-        "Kabel UTP Cat5e",
-        "Kabel Koaksial",
-        "Kabel Fiber Optik",
-        "Kabel Telepon Tembaga"
+        "Konfigurasi jaringan dan keamanan jaringan adalah hal yang sama persis",
+        "Keamanan jaringan berfokus pada cara perangkat terhubung, sedangkan konfigurasi jaringan melindungi perangkat",
+        "Konfigurasi jaringan berfokus pada bagaimana perangkat terhubung, sedangkan keamanan jaringan berfokus pada perlindungan koneksi dan perangkat",
+        "Keamanan jaringan tidak membutuhkan konfigurasi IP Address sama sekali",
+        "Konfigurasi jaringan otomatis mengamankan seluruh perangkat dari ancaman luar"
       ],
       "answer": 2
     },
     {
-      "id": 5,
-      "question": "Alamat IPv4 terdiri dari berapa bit angka biner yang terbagi ke dalam 4 oktet desimal?",
+      "id": 3,
+      "question": "Mengapa sebuah jaringan komputer tetap berisiko meskipun perangkat sudah berhasil terhubung?",
       "options": [
-        "16 bit",
-        "32 bit",
-        "64 bit",
-        "128 bit"
+        "Karena komputer tidak menggunakan mouse dan keyboard yang asli",
+        "Karena kabel jaringan yang digunakan terlalu panjang",
+        "Karena masih terdapat risiko seperti password Wi-Fi yang terlalu mudah atau penggunaan software yang tidak diperbarui",
+        "Karena kapasitas RAM komputer tidak mencukupi untuk internetan",
+        "Karena kecepatan internet dari penyedia layanan terlalu lambat"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 4,
+      "question": "Berikut ini yang bukan merupakan risiko atau ancaman jika jaringan tidak dijaga dengan baik adalah...",
+      "options": [
+        "Akses tidak sah dari orang yang tidak memiliki izin",
+        "Pencurian informasi atau data penting",
+        "Penyebaran malware melalui jaringan",
+        "Peningkatan kecepatan akses internet secara drastis",
+        "Gangguan jaringan sehingga perangkat tidak dapat digunakan secara normal"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 5,
+      "question": "Mengapa penggunaan password Wi-Fi seperti `12345678` sangat tidak disarankan?",
+      "options": [
+        "Karena membuat router cepat rusak",
+        "Karena lebih mudah ditebak dan dibobol oleh pihak yang tidak berwenang",
+        "Karena menghabiskan banyak kuota data",
+        "Karena membuat koneksi internet menjadi terputus-putus",
+        "Karena tidak kompatibel dengan sistem operasi modern"
       ],
       "answer": 1
     },
     {
       "id": 6,
-      "question": "Tujuan utama dari teknik Subnetting pada pengalamatan IP Address adalah...",
+      "question": "Apa fungsi utama dari akun administrator pada sebuah perangkat router?",
       "options": [
-        "Meningkatkan kecepatan putaran kipas pendingin komputer",
-        "Membagi satu jaringan besar menjadi beberapa sub-jaringan kecil agar lalu lintas broadcast lebih efisien",
-        "Menghapus kebutuhan kabel pada jaringan komputer lokal",
-        "Mengganti kata sandi router secara otomatis setiap jam"
+        "Untuk memutar musik di ruang server",
+        "Untuk mempercepat proses download file besar",
+        "Untuk mengatur konfigurasi seperti nama Wi-Fi, password, dan DHCP",
+        "Untuk mencetak dokumen secara nirkabel",
+        "Untuk mendeteksi virus pada laptop siswa"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 7,
-      "question": "Layanan jaringan yang bertugas membagikan alamat IP secara otomatis kepada komputer klien yang baru terhubung adalah...",
+      "question": "Teknologi enkripsi keamanan Wi-Fi modern yang disarankan untuk digunakan adalah...",
       "options": [
-        "DNS (Domain Name System)",
-        "DHCP (Dynamic Host Configuration Protocol)",
-        "HTTP (HyperText Transfer Protocol)",
-        "FTP (File Transfer Protocol)"
+        "WPA2 dan WPA3",
+        "IP Address dan Subnet Mask",
+        "HTTP dan FTP",
+        "DHCP dan DNS",
+        "Ping dan Tracert"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 8,
+      "question": "Apa risiko utama ketika seseorang sering menggunakan Wi-Fi publik gratis di tempat umum (seperti kafe atau bandara) tanpa pengamanan?",
+      "options": [
+        "Komputer akan otomatis terformat ulang",
+        "Informasi sensitif rentan disadap atau dicuri oleh pihak lain",
+        "Baterai laptop akan cepat habis",
+        "Layar monitor akan menjadi buram",
+        "Jaringan seluler di smartphone akan terblokir permanen"
       ],
       "answer": 1
     },
     {
-      "id": 8,
-      "question": "Perintah utilitas command line yang digunakan untuk menguji latensi dan respon konektivitas antar komputer dalam jaringan adalah...",
+      "id": 9,
+      "question": "Perangkat lunak berbahaya seperti virus, worm, trojan, ransomware, dan spyware secara umum disebut sebagai...",
       "options": [
-        "ipconfig",
-        "ping",
-        "cls",
-        "mkdir"
+        "Firewall",
+        "Malware",
+        "Gateway",
+        "Protocol",
+        "Subnet"
       ],
       "answer": 1
+    },
+    {
+      "id": 10,
+      "question": "Apa fungsi dari fitur pembaruan (update) sistem operasi dan aplikasi secara berkala?",
+      "options": [
+        "Mengubah tampilan latar belakang layar secara otomatis",
+        "Menambah kapasitas penyimpanan harddisk",
+        "Memperbaiki bug dan menambal kelemahan (celah) keamanan",
+        "Mempercepat masa pakai baterai perangkat",
+        "Menghapus semua data pribadi pengguna"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 11,
+      "question": "Apa yang dimaksud dengan Firewall dalam sistem keamanan jaringan?",
+      "options": [
+        "Alat untuk mendinginkan perangkat router yang panas",
+        "Mekanisme keamanan yang membantu mengontrol lalu lintas jaringan yang masuk atau keluar berdasarkan aturan tertentu",
+        "Kabel khusus yang tahan terhadap api dan air",
+        "Program untuk mempercepat koneksi Wi-Fi di sekolah",
+        "Ruang khusus penyimpanan server pusat"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 12,
+      "question": "Mana pernyataan yang paling tepat membedakan Keamanan Jaringan dan Keamanan Digital secara keseluruhan?",
+      "options": [
+        "Keamanan jaringan fokus pada jaringan, perangkat jaringan, dan koneksi; sedangkan keamanan digital fokus pada akun, password, phishing, dan privasi",
+        "Keamanan jaringan hanya membahas cara membuat password media sosial",
+        "Keamanan digital hanya membahas cara kerja kabel LAN",
+        "Keamanan jaringan dan keamanan digital memiliki arti dan fokus yang 100% sama",
+        "Keamanan digital tidak memperdulikan masalah privasi pengguna"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 13,
+      "question": "Di bawah ini yang merupakan salah satu prinsip dasar keamanan jaringan adalah...",
+      "options": [
+        "Membagikan password administrator ke semua orang",
+        "Membiarkan sistem operasi tanpa pembaruan",
+        "Batasi akses hanya kepada pihak yang berwenang",
+        "Percaya secara otomatis kepada setiap jaringan publik",
+        "Menonaktifkan firewall agar jaringan lebih cepat"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 14,
+      "question": "Berdasarkan materi, tindakan apa yang dilarang dilakukan oleh siswa terhadap jaringan sekolah?",
+      "options": [
+        "Menggunakan internet untuk mencari materi pembelajaran",
+        "Memperbarui sistem operasi pada laptop pribadi",
+        "Mencoba membobol password Wi-Fi atau masuk ke router tanpa izin",
+        "Mengaktifkan kunci layar pada perangkat masing-masing",
+        "Melaporkan gangguan jaringan kepada pihak berwenang"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 15,
+      "question": "Manakah langkah yang paling tepat dalam melakukan checklist pemeriksaan keamanan perangkat dan Wi-Fi?",
+      "options": [
+        "Memastikan Wi-Fi menggunakan password yang kuat dan tidak membagikannya sembarangan",
+        "Membagikan password router ke seluruh masyarakat umum",
+        "Membiarkan sistem dan aplikasi tidak pernah diperbarui",
+        "Menggunakan Wi-Fi publik tanpa memperhatikan peringatan keamanan browser",
+        "Menonaktifkan proteksi firewall pada setiap perangkat"
+      ],
+      "answer": 0
     }
   ]
 }
