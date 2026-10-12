@@ -4,7 +4,7 @@
     "classLevel": "10",
     "title": "Kuis Informatika Kelas 10",
     "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 10 (Berpikir Komputasional dan Pemecahan Masalah Sistematis).",
-    "locked": false,
+    "locked": true,
     "maxQuestions": 15
   },
   "questions": [
@@ -47,13 +47,7 @@
     {
       "id": 4,
       "question": "Perhatikan deret angka berikut: 3, 6, 9, 12, ... Angka berikutnya berdasarkan pengenalan pola adalah...",
-      "options": [
-        "13",
-        "14",
-        "15",
-        "16",
-        "18"
-      ],
+      "options": ["13", "14", "15", "16", "18"],
       "answer": 2
     },
     {

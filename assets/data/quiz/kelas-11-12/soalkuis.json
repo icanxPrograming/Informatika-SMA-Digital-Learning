@@ -4,7 +4,7 @@
     "classLevel": "11-12",
     "title": "Kuis Informatika Kelas 11–12",
     "description": "Uji pemahaman Anda mengenai materi Informatika SMA Kelas 11–12 (Keamanan Jaringan, Konfigurasi, dan Proteksi Digital).",
-    "locked": false,
+    "locked": true,
     "maxQuestions": 15
   },
   "questions": [
@@ -107,13 +107,7 @@
     {
       "id": 9,
       "question": "Perangkat lunak berbahaya seperti virus, worm, trojan, ransomware, dan spyware secara umum disebut sebagai...",
-      "options": [
-        "Firewall",
-        "Malware",
-        "Gateway",
-        "Protocol",
-        "Subnet"
-      ],
+      "options": ["Firewall", "Malware", "Gateway", "Protocol", "Subnet"],
       "answer": 1
     },
     {
