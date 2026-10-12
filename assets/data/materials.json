@@ -243,9 +243,9 @@
     "category": "Analisis Data",
     "description": "Pengenalan pemrosesan data kategorikal dan numerik sederhana menggunakan lembar kerja spreadsheet.",
     "duration": "45 menit",
-    "locked": true,
+    "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-10/pertemuan-07/Materi-Pertemuan-7-kelas-10.docx"
     },
     "content": {
@@ -638,9 +638,9 @@
     "category": "Jaringan Komputer",
     "description": "Pengenalan prosedur berbagai berkas (File Sharing) dan perangkat keras (Printer Sharing) dalam satu jaringan lokal.",
     "duration": "45 menit",
-    "locked": true,
+    "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-11-12/pertemuan-07/Materi-Pertemuan-7-kelas-11-12.docx"
     },
     "content": {
