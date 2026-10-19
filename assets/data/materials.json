@@ -283,9 +283,9 @@
     "category": "Algoritma & Pemrograman",
     "description": "Mengenal logika algoritma runtutan, percabangan, dan perulangan dasar menggunakan bahasa pemrograman Python.",
     "duration": "50 menit",
-    "locked": true,
+    "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-10/pertemuan-08/Materi-Pertemuan-8-kelas-10.docx"
     },
     "content": {
@@ -678,9 +678,9 @@
     "category": "Jaringan Komputer",
     "description": "Menggunakan perkakas diagnostik jaringan seperti `ipconfig`, `ping`, `traceroute`, dan penanganan masalah jaringan fisik/logika.",
     "duration": "50 menit",
-    "locked": true,
+    "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-11-12/pertemuan-08/Materi-Pertemuan-8-kelas-11-12.docx"
     },
     "content": {
