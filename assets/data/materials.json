@@ -323,9 +323,9 @@
     "category": "Dampak Sosial Informatika",
     "description": "Memahami etika digital, hukum UU ITE, dan dampak transformasi teknologi komputasi terhadap masyarakat.",
     "duration": "40 menit",
-    "locked": true,
+    "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-10/pertemuan-09/Materi-Pertemuan-9-kelas-10.docx"
     },
     "content": {
@@ -718,9 +718,9 @@
     "category": "Jaringan Komputer",
     "description": "Memahami infrastruktur ISP, cara kerja backbone internet, sistem domain DNS, dan pengantaran paket data antar benua.",
     "duration": "50 menit",
-    "locked": true,
+    "locked": false,
     "document": {
-      "available": false,
+      "available": true,
       "file": "assets/materials/kelas-11-12/pertemuan-09/Materi-Pertemuan-9-kelas-11-12.docx"
     },
     "content": {
